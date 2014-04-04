@@ -1,0 +1,9 @@
+.*
+!.gitignore
+!.gitkeep
+
+# Bundler, Berkshelf
+*.lock
+
+# Berkshelf
+cookbooks
