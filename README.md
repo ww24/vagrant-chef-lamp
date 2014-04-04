@@ -14,7 +14,7 @@ Requirements
 Setup
 ------------
 1. `bundle install`
-1. `vagrant plugin install vagrant-omnibus vagrant-vbguest`
+1. `vagrant plugin install vagrant-omnibus`
 1. `./provision.sh`
 
 Start
