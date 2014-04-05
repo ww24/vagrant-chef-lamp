@@ -1,9 +1,14 @@
 .*
-!.gitignore
-!.gitkeep
 
 # Bundler, Berkshelf
 *.lock
 
 # Berkshelf
 cookbooks
+
+# Apache2
+www/logs/*
+
+# Git
+!.gitignore
+!.gitkeep
