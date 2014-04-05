@@ -10,6 +10,9 @@
       "default_site_enabled": true,
       "docroot_dir": "/vagrant/www/docroot",
       "log_dir": "/vagrant/www/logs"
+    },
+    "mysql": {
+      "server_root_password": "admin"
     }
   },
   "run_list": [
