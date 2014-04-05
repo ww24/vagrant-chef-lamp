@@ -48,7 +48,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     chef.data_bags_path = "data_bags"
     chef.add_role "lamp"
     chef.json = {
-      
+      # you can override default settings
     }
   end
 end

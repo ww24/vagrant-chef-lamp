@@ -13,6 +13,12 @@
     },
     "mysql": {
       "server_root_password": "admin"
+    },
+    "php": {
+      "packages": [
+        "php5-cgi", "php5", "php5-dev", "php5-cli", "php-pear",
+        "php5-json", "php5-mcrypt", "php5-xhprof"
+      ]
     }
   },
   "run_list": [
