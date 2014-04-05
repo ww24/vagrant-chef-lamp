@@ -1,7 +1,7 @@
 source 'https://api.berkshelf.com'
 
 cookbook 'apt'
-cookbook 'locale'
+cookbook 'locale', github: 'ww24/locale', branch: 'fix'
 cookbook 'apache2', github: 'ww24/apache2', branch: 'fix'
 cookbook 'mysql', '~> 5.0.2'
 cookbook 'memcached', '~> 1.7.2'

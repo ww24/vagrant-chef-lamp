@@ -2,6 +2,10 @@
   "name": "lamp",
   "json_class": "Chef::Role",
   "default_attributes": {
+    "locale": {
+      "lang": "ja_JP.UTF-8",
+      "lc_all": "ja_JP.UTF-8"
+    },
     "apache": {
       "default_site_enabled": true,
       "docroot_dir": "/vagrant/www/docroot",
@@ -10,6 +14,7 @@
   },
   "run_list": [
     "recipe[apt]",
+    "recipe[locale]",
     "recipe[apache2]",
     "recipe[apache2::mod_php5]",
     "recipe[apache2::mod_rewrite]",
