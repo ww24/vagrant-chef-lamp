@@ -27,7 +27,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # the path on the host to the actual folder. The second argument is
   # the path on the guest to mount the folder. And the optional third
   # argument is a set of non-required options.
-  # config.vm.synced_folder "../data", "/vagrant_data"
+  config.vm.synced_folder "www", "/www",
+    owner: "vagrant",
+    group: "www-data",
+    mount_options: ["dmode=775,fmode=664"]
 
   # Provider-specific configuration so you can fine-tune various
   # backing providers for Vagrant. These expose provider-specific options.
@@ -49,6 +52,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     chef.add_role "lamp"
     chef.json = {
       # you can override default settings
+      :apache => {
+        :docroot_dir => "/www/public",
+        :log_dir => "/www/logs"
+      }
     }
   end
 end

@@ -8,7 +8,7 @@
     },
     "apache": {
       "default_site_enabled": true,
-      "docroot_dir": "/vagrant/www/docroot",
+      "docroot_dir": "/vagrant/www/public",
       "log_dir": "/vagrant/www/logs"
     },
     "mysql": {
