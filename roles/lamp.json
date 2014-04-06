@@ -12,7 +12,8 @@
       "log_dir": "/vagrant/www/logs"
     },
     "mysql": {
-      "server_root_password": "admin"
+      "server_root_password": "admin",
+      "server_debian_password": "admin"
     },
     "php": {
       "packages": [
