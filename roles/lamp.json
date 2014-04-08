@@ -19,7 +19,10 @@
       "packages": [
         "php5-cgi", "php5", "php5-dev", "php5-cli", "php-pear",
         "php5-json", "php5-mcrypt", "php5-xhprof"
-      ]
+      ],
+      "directives": {
+        "data.timezone": "Asia/Tokyo"
+      }
     }
   },
   "run_list": [
