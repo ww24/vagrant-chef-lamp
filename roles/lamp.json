@@ -41,7 +41,9 @@
     "recipe[php::module_gd]",
     "recipe[php::module_memcache]",
     "recipe[php::module_mysql]",
-    "recipe[php::module_sqlite3]"
+    "recipe[php::module_sqlite3]",
+    "recipe[composer]",
+    "recipe[git]"
   ],
   "description": "The LAMP role",
   "chef_type": "role"
