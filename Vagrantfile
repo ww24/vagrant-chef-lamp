@@ -42,6 +42,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   # provisioning
   config.omnibus.chef_version = :latest
+  # http://stackoverflow.com/questions/19851265/why-apache2-and-tomcat7-service-cant-autostartup-on-ubuntu-cloudimg
+  # console output -> console log
+  config.vm.provision :shell, inline: 'sed -i s/console\ output/console\ log/ /etc/init/rc.conf'
   config.vm.provision :chef_solo do |chef|
     chef.cookbooks_path = "cookbooks"
     chef.roles_path = "roles"
